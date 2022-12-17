@@ -89,15 +89,15 @@ var finances = [
 // display the table
 // console.table(finances);
 
-// the number of months
+// displays the number of months on the console
 console.log("Total Months: "+finances.length);
 
-// // The net total of loss/profit
-// var total = 0; 
-// for (var i = 0; i<finances.length; i++){
-//         total = total + finances[i][1];
-//     }
-// console.log ("Total: $"+total);
+// calculates The net total of loss/profit
+var total = 0; 
+for (var i = 0; i<finances.length; i++){
+        total = total + finances[i][1];
+    }
+console.log ("Total: $"+total);
 
 
 
@@ -118,25 +118,25 @@ console.log("Total Months: "+finances.length);
 //         console.log(data);
 //     });
 // });
-var profit = [];
-var change = [];
-for (var i = 0; i < finances.length;i++){
- profit.push (finances[i][1]);
-}
-console.log(profit.length);
-for (var i = 0; i < profit.length-1;i++){
-   change.push (profit[i+1]-profit[i]);
-}
+// var profit = [];
+// var change = [];
+// for (var i = 0; i < finances.length;i++){
+//  profit.push (finances[i][1]);
+// }
+// console.log(profit.length);
+// for (var i = 0; i < profit.length-1;i++){
+//    change.push (profit[i+1]-profit[i]);
+// }
     
-    console.log(change);
-    console.log(change.length);
-var sum = 0;
-for (var i = 0; i<change.length; i++){
-     sum = (sum + change [i]);
-}
-console.log(sum)
-var average = (sum/change.length).toFixed(2);
-console.log(average);
+//     console.log(change);
+//     console.log(change.length);
+// var sum = 0;
+// for (var i = 0; i<change.length; i++){
+//      sum = (sum + change [i]);
+// }
+// console.log(sum)
+// var average = (sum/change.length).toFixed(2);
+// console.log(average);
     
 
    
