@@ -89,8 +89,8 @@ var finances = [
 // display the table
 // console.table(finances);
 
-// // the number of months
-// console.log("Total Months: "+finances.length);
+// the number of months
+console.log("Total Months: "+finances.length);
 
 // // The net total of loss/profit
 // var total = 0; 
