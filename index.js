@@ -86,35 +86,35 @@ var finances = [
 ['Jan-2017', 138230],
 ['Feb-2017', 671099]
 ];
-// display the table
-// console.table(finances);
+
+console.log (" Financial Analysis")
+console.log ("--------------------")
 
 // displays the number of months on the console
 console.log("Total Months: "+finances.length);
 
-// calculates The net total of loss/profit
+// for loop calculates The net total of loss/profit
 var total = 0; 
 for (var i = 0; i<finances.length; i++){
         total = total + finances[i][1];
     }
-console.log ("Total: $"+total);
+        console.log ("Total: $"+total);
 
-
-// creates an array with the profit/losses values
+// calcualting the average change in profit for month to month over the while period
+// first:
+// for loop creates "profit" array with the profit/losses values
 var profit = [];
 for (var i = 0 ; i < finances.length;i++){
     profit.push (finances[i][1]);
 }
-    console.log(profit.length);
 
-
-// var change = [];
-// for (var i = 0; i < profit.length-1;i++){
-//    change.push (profit[i+1]-profit[i]);
-// }
+// second:
+// for loop calculates the changes from one month to another and push them in "change" array
+var change = [];
+for (var i = 0; i < profit.length-1;i++){
+    change.push (profit[i+1]-profit[i]);
+}
     
-//     console.log(change);
-//     console.log(change.length);
 // var sum = 0;
 // for (var i = 0; i<change.length; i++){
 //      sum = (sum + change [i]);
