@@ -100,30 +100,15 @@ for (var i = 0; i<finances.length; i++){
 console.log ("Total: $"+total);
 
 
+// creates an array with the profit/losses values
+var profit = [];
+for (var i = 0 ; i < finances.length;i++){
+    profit.push (finances[i][1]);
+}
+    console.log(profit.length);
 
 
-
-// console.log (finances[35][1]);
-// console.log(finances[10][1]);
-// console.log(finances[11][1]);
-// console.log(finances[12][1]);
-
-
-
-
-
-
-// finances.forEach((activity) => {
-//     activity.forEach((data) => {
-//         console.log(data);
-//     });
-// });
-// var profit = [];
 // var change = [];
-// for (var i = 0; i < finances.length;i++){
-//  profit.push (finances[i][1]);
-// }
-// console.log(profit.length);
 // for (var i = 0; i < profit.length-1;i++){
 //    change.push (profit[i+1]-profit[i]);
 // }
