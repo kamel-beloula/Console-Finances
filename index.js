@@ -90,55 +90,52 @@ var finances = [
 console.log (" Financial Analysis")
 console.log ("--------------------")
 
-// displays the number of months on the console
-console.log("Total Months: "+finances.length);
+// Task 1:
+    // displays the number of months in the console
+        console.log("Total Months: "+finances.length);
 
-// for loop calculates The net total of loss/profit
-var total = 0; 
-for (var i = 0; i<finances.length; i++){
-        total = total + finances[i][1];
-    }
-        console.log ("Total: $"+total);
+// Task 2:
+    // for loop calculates The net total of loss/profit
+        var total = 0; 
+        for (var i = 0; i<finances.length; i++){
+                total = total + finances[i][1];
+            }
+                console.log ("Total: $"+total);
 
-// calcualting the average change in profit for month to month over the while period
+// Task 3:
+    // calcualting the average change in profit for month to month over the while period
 
-// first:
-// for loop creates "profit" array with the profit/losses values
-var profit = [];
-for (var i = 0 ; i < finances.length;i++){
-    profit.push (finances[i][1]);
-}
+        // first:
+        // for loop creates "profit" array with the profit/losses values
+        var profit = [];
+        for (var i = 0 ; i < finances.length;i++){
+            profit.push (finances[i][1]);
+        }
 
-// second:
-// for loop calculates the changes from one month to another and push them in "change" array
-var change = [];
-for (var i = 0; i < profit.length-1;i++){
-    change.push (profit[i+1]-profit[i]);
-}
-    
-// third
-// for loop calculates the total of all the changes in profit
-var sum = 0;
-for (var i = 0; i<change.length; i++){
-     sum = (sum + change [i]);
-}
+        // second:
+        // for loop calculates the changes from one month to another and push them in "change" array
+        var change = [];
+        for (var i = 0; i < profit.length-1;i++){
+            change.push (profit[i+1]-profit[i]);
+        }
+            
+        // third
+        // for loop calculates the total of all the changes in profit
+        var sum = 0;
+        for (var i = 0; i<change.length; i++){
+            sum = (sum + change [i]);
+        }
 
-//finally, calculating the average change to the nearest 100 decimal
-var average = (sum/change.length).toFixed(2);
-    console.log("Average Change: $" + average);
-    
+        //finally, calculating the average change to the nearest 100 decimal
+        var average = (sum/change.length).toFixed(2);
+            console.log("Average Change: $" + average);
+            
+// task 4
+// calculating the max profit and displaying the corresponding month
+        var max = Math.max(...change);
+        console.log(max)
 
-   
 
-
-
-
-// // loop the outer array
-// for (var i = 0; i < finances.length; i++) {
-//     // get the size of the inner array
-//     var innerArrayLength = finances[i].length;
-//     // loop the inner array
-//     for (var j = 0; j < innerArrayLength; j++) {
-//         console.log('[' + i + ',' + j + '] = ' + finances[i][j]);
-//     }
-// }
+// calculating the min profit and displaying the corresponding month
+        var min = Math.min(...change);
+        console.log(min)
