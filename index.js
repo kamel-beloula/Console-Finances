@@ -122,9 +122,10 @@ var sum = 0;
 for (var i = 0; i<change.length; i++){
      sum = (sum + change [i]);
 }
-console.log(sum)
-// var average = (sum/change.length).toFixed(2);
-// console.log(average);
+
+//finally, calculating the average change to the nearest 100 decimal
+var average = (sum/change.length).toFixed(2);
+    console.log("Average Change: $" + average);
     
 
    
