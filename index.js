@@ -101,6 +101,7 @@ for (var i = 0; i<finances.length; i++){
         console.log ("Total: $"+total);
 
 // calcualting the average change in profit for month to month over the while period
+
 // first:
 // for loop creates "profit" array with the profit/losses values
 var profit = [];
@@ -115,11 +116,13 @@ for (var i = 0; i < profit.length-1;i++){
     change.push (profit[i+1]-profit[i]);
 }
     
-// var sum = 0;
-// for (var i = 0; i<change.length; i++){
-//      sum = (sum + change [i]);
-// }
-// console.log(sum)
+// third
+// for loop calculates the total of all the changes in profit
+var sum = 0;
+for (var i = 0; i<change.length; i++){
+     sum = (sum + change [i]);
+}
+console.log(sum)
 // var average = (sum/change.length).toFixed(2);
 // console.log(average);
     
