@@ -131,11 +131,32 @@ console.log ("--------------------")
             console.log("Average Change: $" + average);
             
 // task 4
+ change.unshift(0);
+ for (var i = 1; i < finances.length; i++) {
+    finances[i].push(change[i]);
+  }
+  console.table(finances);
+
+
+
 // calculating the max profit and displaying the corresponding month
-        var max = Math.max(...change);
-        console.log(max)
+        for(var i = 0; i< finances.length; i++){
+            var max = Math.max(...change);
+            if (finances[i][2] === max){
+                console.log("Greatest Increase in Profits: " + finances[i][0]+ " (" + finances[i][2] +")");
+            }
+    }
 
 
 // calculating the min profit and displaying the corresponding month
         var min = Math.min(...change);
         console.log(min)
+
+        for(var i = 0; i< finances.length; i++){
+                if (finances[i][2] === max){
+                    console.log("Greatest Increase in Profits: " + finances[i][0]+ " (" +finances[i][2] + ")");
+                }
+        }
+       
+        // Greatest Increase in Profits: Feb-2012 ($1926159)
+        
