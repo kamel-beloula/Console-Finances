@@ -87,6 +87,7 @@ var finances = [
 ['Feb-2017', 671099]
 ];
 
+console.log ("```text")
 console.log (" Financial Analysis")
 console.log ("--------------------")
 
@@ -135,28 +136,24 @@ console.log ("--------------------")
  for (var i = 1; i < finances.length; i++) {
     finances[i].push(change[i]);
   }
-  console.table(finances);
 
 
-
-// calculating the max profit and displaying the corresponding month
-        for(var i = 0; i< finances.length; i++){
-            var max = Math.max(...change);
-            if (finances[i][2] === max){
-                console.log("Greatest Increase in Profits: " + finances[i][0]+ " (" + finances[i][2] +")");
-            }
-    }
-
-
-// calculating the min profit and displaying the corresponding month
-        var min = Math.min(...change);
-        console.log(min)
-
-        for(var i = 0; i< finances.length; i++){
+    // calculating the max profit and displaying the corresponding month
+            for(var i = 0; i< finances.length; i++){
+                var max = Math.max(...change);
                 if (finances[i][2] === max){
-                    console.log("Greatest Increase in Profits: " + finances[i][0]+ " (" +finances[i][2] + ")");
+                    console.log("Greatest Increase in Profits: " + finances[i][0]+ " ($" + finances[i][2] +")");
+                }
+        }
+
+// Task 5:
+    // calculating the min profit and displaying the corresponding month
+            for(var i = 0; i< finances.length; i++){
+                var min = Math.min(...change);
+                if (finances[i][2] === min){
+                    console.log("Greatest Decrease in Profits: " + finances[i][0]+ " ($" + finances[i][2] +")");
                 }
         }
        
-        // Greatest Increase in Profits: Feb-2012 ($1926159)
+console.log ("```")
         
