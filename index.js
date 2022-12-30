@@ -87,7 +87,6 @@ var finances = [
 ['Feb-2017', 671099]
 ];
 
-console.log ("```text")
 console.log (" Financial Analysis")
 console.log ("--------------------")
 
