@@ -20,7 +20,7 @@ the exercise ia about a given company profits and lossed over a period of time. 
 ## Installation
 
 
-In order to install this project, you must login to GitHub and go to github. Once there you will click on the green button that says clone or download. You will be given choices on how to download: using the ssh/html key or downloading the zip file.
+In order to install this project, you must login to GitHub. Once there you will click on the green button that says clone or download. You will be given choices on how to download: using the ssh/html key or downloading the zip file.
 
 Using SSH/HTML Key: You will copy the link shown and open up either terminal (mac: pre-installed) or gitbash (pc: must be installed). Once the application is open, you will type git clone paste url here. Once you have cloned the htx-tacos repo, cd into the repo and type "open ." to open the folder which contains all files used for the website. You can also type "code ." to open the repo in VS code.
 
@@ -43,7 +43,7 @@ https://kamel-beloula.github.io/Console-Finances/
 ## Credits
 
 Trilogy Education Services Frontend Web Development bootcamp website.  
-[mdbootstrap.com](https://mdbootstrap.com)
+
 
 
 ## License
